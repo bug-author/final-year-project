@@ -1,0 +1,25 @@
+Sumo Network
+
+- defines traffic related part of a map
+
+-- node files describe the junction
+-- edge files describe the connection between nodes
+
+-----
+netconvert --node-files=sumohighway.node.xml --edge-files=sumohighway.edge.xml -o sumohighway.net.xml
+
+# alternative - more control
+netgenerate --<type-of-network eg grid> --grid.x-number= --grid.y-number= --grid.x-length= --grid.y-length= -o sumohighway2.net.xml
+
+###
+open sumo gui
+open xml network
+
+# simulation set up
+# random trips
+randomTrips.py -n sumohighway.net.xml -e <time> -o sumohighway.trips.xml
+
+# convert routes to trips
+duarouter -n sumotest.net.xml --route-files=sumohighway.routes.xml -o sumohighway.rou.xml --ignore-errors
+
+### use route file and network file to setup a config

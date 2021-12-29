@@ -4,7 +4,7 @@ import pandas as pd
 with open('timestep_data.json', 'r') as file_:
     data = json.load(file_)
 
-print(type(data))
+#print(type(data))
 
 data_arr, timestep_arr = [], []
 
@@ -82,5 +82,4 @@ df = pd.DataFrame({
     '_Slope': final_data['_Slope'],
     })
 
-# done
-# Vehicle_ID ==
+df.to_csv('parsed_data.csv')
