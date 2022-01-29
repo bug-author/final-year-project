@@ -2,3 +2,5 @@ data.json
 Dataset.csv
 sumoTrace.xml
 timestep_data.json
+data/
+*.csv
