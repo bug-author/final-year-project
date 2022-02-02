@@ -9,3 +9,4 @@ prelude/sumoTrace.xml
 prelude/timestep_data.json
 prelude/Sim_SingleLane.csv
 prelude/VANET/prepared_dataset.csv
+api/data/
