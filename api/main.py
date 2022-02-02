@@ -3,9 +3,7 @@ import os
 import pandas as pd
 
 WORKING_DIR = os.getcwd()
-BASE_DIR = os.path.dirname(WORKING_DIR)
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-CACHE = os.path.join(DATA_DIR, 'cache')
+DATA_DIR = os.path.join(WORKING_DIR, 'api/data')
 
 app = FastAPI()
 
