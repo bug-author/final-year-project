@@ -2,7 +2,7 @@ import numpy as np
 
 class VectorNormalizer:
     def __init__(self):
-        self.norm = []
+        self.norm = None
         
     def fit(self, dataframe):
         self.norm = np.linalg.norm(dataframe, axis=0)
