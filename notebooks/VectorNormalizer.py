@@ -9,9 +9,9 @@ class VectorNormalizer:
         return self.norm
     
     def transform(self, dataframe):
-        if len(self.norm) > 0:
+        if self.norm is not None:
             return dataframe/self.norm
     
     def inverse_transform(self, dataframe):
-        if len(self.norm) > 0:
+        if self.norm is not None:
             return dataframe*self.norm
