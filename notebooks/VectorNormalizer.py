@@ -12,6 +12,8 @@ class VectorNormalizer:
         if self.norm is not None:
             return dataframe/self.norm
     
-    def inverse_transform(self, dataframe):
+    def inverse_transform(self, dataframe, norms=None):
+        if norms is not None:
+            return dataframe*norms
         if self.norm is not None:
             return dataframe*self.norm
