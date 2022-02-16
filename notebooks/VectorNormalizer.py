@@ -1,14 +1,7 @@
 # import numpy as np
 from sklearn.preprocessing import Normalizer
 import pandas as pd
-
 from typing import List
-import numpy as np
-arr = [[4,1,2,2], [1,3,9,3], [5,7,5,1]]
-x = np.linalg.norm(arr) # doesnt work as intended if there are multiple arrays
-print(x)
-print()
-
 
 class VectorNormalizer:
     """
@@ -16,6 +9,9 @@ class VectorNormalizer:
     transformation applied: x/ L2 norm of X =>
     """
     def __init__(self) -> None:
+        """
+        intialize attributes
+        """
         self.norms = []
         self.inverse_transformed = []
         self.transformed = []
