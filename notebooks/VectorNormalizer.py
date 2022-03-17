@@ -1,4 +1,3 @@
-# import numpy as np
 from sklearn.preprocessing import Normalizer
 import pandas as pd
 from typing import List
@@ -52,7 +51,6 @@ class VectorNormalizer:
         return pd.DataFrame(self.inverse_transformed)
 
 
-import pandas as pd
 
 df = pd.read_csv('data.csv')
 

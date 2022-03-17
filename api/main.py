@@ -49,3 +49,11 @@ def raw_data():
     return {
         'raw_data' : raw_df.to_dict(),
     }
+
+@app.get('/data')
+def raw_data():
+    df = pd.read_csv(f'{DATA_DIR}/whole_data_out.csv')
+
+    return {
+        'data' : df.to_dict(),
+    }
