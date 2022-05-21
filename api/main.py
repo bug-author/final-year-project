@@ -2,6 +2,9 @@ from fastapi import FastAPI
 import os
 import pandas as pd
 
+# todos
+# new end-points
+
 WORKING_DIR = os.getcwd()
 DATA_DIR = os.path.join(WORKING_DIR, 'data')
 # print(f'{DATA_DIR}/positions_train_out.csv')
