@@ -50,10 +50,30 @@ Obersvations and suggestions for speed data
 - Some of the vehicles have peaks when the trip is initialized, and this needs to be taken care of. *This is because it is a difficult task for time series regression algorithms to predict and generalize peaks in the data, especially when there are no seasonality trends in the data and it is completely random.* 
 - There should be some stationarity checks applied to this time series data for getting more insights before starting the development of the model. These tests are a part of the next phase in the pipeline.
 
+----
+### Data Preprocessing
+Before applying some preprocessing techniques, some tests were performed to get detailed insights. Stationarity checks were ran on the dataset.
+
+Observations
+- Standard deviation is constant and therefore the variance is constant which should be the case for a time series to be stationary. 
+- However, some vehicles violated the condition of test statistics by having a value lesser than the critical values. 
+
+![unnamed (4)](https://user-images.githubusercontent.com/48406637/185091383-2c872dc1-6f74-4849-ba2c-bf1d3fc3a538.png)
+
+![unnamed (5)](https://user-images.githubusercontent.com/48406637/185091406-f6a0335e-923c-4aa6-852f-6614adf94595.png)
 
 
+Therefore, the data failed the stationarity test and needed to be made stationary before training.
 
+- Lag1 Differencing was applied to the dataset to make it stationary.
+- Vector normalization was also applied to the training data
 
+![unnamed (6)](https://user-images.githubusercontent.com/48406637/185091423-f2687926-7611-426b-a51a-ce55d38b2ec4.png)
+
+---
+### Data Splitting
+- Data is splitted as: 85% train - 15% test
+- Data is also shaped as *(number_of_time_steps, number_of_features)* in order for it to train on Sequential DL Models (RNN, LSTM, GRU)
 
 ### Algorithm
 ## Results
