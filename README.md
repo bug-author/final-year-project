@@ -75,5 +75,44 @@ Therefore, the data failed the stationarity test and needed to be made stationar
 - Data is splitted as: 85% train - 15% test
 - Data is also shaped as *(number_of_time_steps, number_of_features)* in order for it to train on Sequential DL Models (RNN, LSTM, GRU)
 
+---
+### Model Development
+- The models is developed using Keras
+- After comparing the several models that were developed, the model with best results (Dropout Regularized LSTM) was chosen
+
+![image](https://user-images.githubusercontent.com/48406637/185092722-f9435ea1-be30-4a58-b8c3-c8d6cf897527.png)
+
+
+- Architecture of chosen model
+
+
+![unnamed (7)](https://user-images.githubusercontent.com/48406637/185092551-855b085e-c240-4ffe-a339-94ce9bd52bf6.png)
+
+--- 
+### Clustering
+- The forecasts from the model are given to the clustering algorithm which figures out the optimal cluster formation for a given test vehicle and constraints.
+
+---
+### Data Preprocessing
+- The speed values are quantized upto 3 decimal places.
+
+---
+### Feature Engineering
+Vehicle Positions were dropped from the training data because of these observations.
+
+- Position data is always linearly increasing while the speed data is a time series. 
+- The dataset simulated by SUMO was set to output readings every one second so we can easily derive the positions after forecasting. 
+ 
+This decision also reduces the neural network computation since there would now be 20 features for training instead of 40 in a 20 vehicle network.
+---
+### Mean Computation Time Calculation
+This phase is explained in the Algorithm section.
+
+
 ### Algorithm
+![image](https://user-images.githubusercontent.com/48406637/185094545-d862e5ec-19fa-4b67-a3c2-292028f53c5c.png)
+
 ## Results
+![unnamed](https://user-images.githubusercontent.com/48406637/185097783-3a8cd9b7-a6b9-4ec6-9806-169178d22884.jpg)
+
+![unnamed (1)](https://user-images.githubusercontent.com/48406637/185097790-13db8f6a-ccd2-4c38-9251-f07ec8be6f65.jpg)
