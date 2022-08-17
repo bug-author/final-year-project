@@ -5,7 +5,7 @@
 - `api/` A FastAPI api for serving dataset
 - `training/` code (noteboks and helper scripts) for training the model
 - `clustering` code for second phase i.e. optimal cluster formation
-
+---
 - Presentation slides can be found [here](https://docs.google.com/presentation/d/1_vtB7uUEUL9otgZAAquNeakVFEcEkK-RATCQOFo6aog/edit?usp=sharing)
 
 ## Block Diagram 
