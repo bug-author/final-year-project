@@ -27,5 +27,33 @@ In summary, this project revolves around:
 - Dataset is generated using the [SUMO](https://www.eclipse.org/sumo/) traffic simulator.
 - Different variants from the dataset are served through an API developed with FastAPI on Heroku.
 
+----
+
+### Exploratory Data Analysis
+Obersvations and suggestions for position data
+![unnamed (1)](https://user-images.githubusercontent.com/48406637/185089507-4b04bc10-26ff-417b-9dd7-48727b39284a.png)
+
+- Vehicle positions are almost purely linear data. 
+- A correlation was speculated between the positions of some vehicles in the network duing dataset generation, the EDA phase supported this speculation. 
+- Positions start from 0 for each vehicle and are in the range of a continuous real interval different for each vehicle. 
+
+These observation hint towards using suitable standardization or normalization techniques since Deep Learning models work better on standardized data.
+
+Obersvations and suggestions for speed data
+
+![unnamed (2)](https://user-images.githubusercontent.com/48406637/185089492-2d211069-d33d-4f1c-8c49-43fef81c4a3c.png)
+
+![unnamed (3)](https://user-images.githubusercontent.com/48406637/185089441-16ddf296-1b9e-4ed8-a589-02b7a99eb116.png)
+
+
+- Vehicle speeds are in in the form of a time series range. 
+- Some of the vehicles have peaks when the trip is initialized, and this needs to be taken care of. *This is because it is a difficult task for time series regression algorithms to predict and generalize peaks in the data, especially when there are no seasonality trends in the data and it is completely random.* 
+- There should be some stationarity checks applied to this time series data for getting more insights before starting the development of the model. These tests are a part of the next phase in the pipeline.
+
+
+
+
+
+
 ### Algorithm
 ## Results
