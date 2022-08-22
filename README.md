@@ -124,6 +124,8 @@ This phase is explained in the Algorithm section.
 ![image](https://user-images.githubusercontent.com/48406637/185940972-692df289-db2a-49da-971e-10abf521c0e8.png)
 
 ## Results
-![unnamed](https://user-images.githubusercontent.com/48406637/185097783-3a8cd9b7-a6b9-4ec6-9806-169178d22884.jpg)
+![Picture4](https://user-images.githubusercontent.com/48406637/185941529-3109114a-83a2-47f6-95ea-dd5ddc4664f2.png)
 
-![unnamed (1)](https://user-images.githubusercontent.com/48406637/185097790-13db8f6a-ccd2-4c38-9251-f07ec8be6f65.jpg)
+
+![Picture5](https://user-images.githubusercontent.com/48406637/185941425-bcdc3e8d-5eb9-4b41-a06c-fe12f86746d8.png)
+
