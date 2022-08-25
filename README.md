@@ -109,7 +109,7 @@ Vehicle Positions were dropped from the training data because of these observati
 - Position data is always linearly increasing while the speed data is a time series. 
 - The dataset simulated by SUMO was set to output readings every one second so we can easily derive the positions after forecasting. 
  
-This decision also reduces the neural network computation since there would now be 20 features for training instead of 40 in a 20 vehicle network.
+#### This decision also reduces the neural network computation since there would now be 20 features for training instead of 40 in a 20 vehicle network.
 ---
 ### Mean Computation Time Calculation
 This phase is explained in the Algorithm section.
