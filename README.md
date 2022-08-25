@@ -47,6 +47,8 @@ These observation hint towards using suitable standardization or normalization t
 
 Obersvations and suggestions for speed data
 
+<br/>
+
 ![unnamed (2)](https://user-images.githubusercontent.com/48406637/185089492-2d211069-d33d-4f1c-8c49-43fef81c4a3c.png)
 
 ![unnamed (3)](https://user-images.githubusercontent.com/48406637/185089441-16ddf296-1b9e-4ed8-a589-02b7a99eb116.png)
@@ -124,8 +126,10 @@ This phase is explained in the Algorithm section.
 ![image](https://user-images.githubusercontent.com/48406637/185940972-692df289-db2a-49da-971e-10abf521c0e8.png)
 
 ## Results
-![Picture4](https://user-images.githubusercontent.com/48406637/185941529-3109114a-83a2-47f6-95ea-dd5ddc4664f2.png)
+<p float="left">
 
+ <img src=https://user-images.githubusercontent.com/48406637/185941529-3109114a-83a2-47f6-95ea-dd5ddc4664f2.png width=500px/>
 
-![Picture5](https://user-images.githubusercontent.com/48406637/185941425-bcdc3e8d-5eb9-4b41-a06c-fe12f86746d8.png)
+<img src=https://user-images.githubusercontent.com/48406637/185941425-bcdc3e8d-5eb9-4b41-a06c-fe12f86746d8.png width=500px/>
 
+</p>
