@@ -135,20 +135,14 @@ This phase is explained in the Algorithm section.
 
 ### Algorithm
 
-<div align="center">
-
 ![image](https://user-images.githubusercontent.com/48406637/185940611-d17e214b-fc83-4e3e-b736-16c59b64e6aa.png)
-
- </div>
  
 ---
 
-<div align="center">
 
 ![image](https://user-images.githubusercontent.com/48406637/185940972-692df289-db2a-49da-971e-10abf521c0e8.png)
 
- </div>
- 
+
  
 ## Results
 <p float="left">
