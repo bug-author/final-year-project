@@ -74,9 +74,12 @@ Observations
 
 ![unnamed (4)](https://user-images.githubusercontent.com/48406637/185091383-2c872dc1-6f74-4849-ba2c-bf1d3fc3a538.png)
 
+<div align="center">
+ 
 ![unnamed (5)](https://user-images.githubusercontent.com/48406637/185091406-f6a0335e-923c-4aa6-852f-6614adf94595.png)
 
-
+</div>
+ 
 Therefore, the data failed the stationarity test and needed to be made stationary before training.
 
 - Lag1 Differencing was applied to the dataset to make it stationary.
@@ -94,14 +97,21 @@ Therefore, the data failed the stationarity test and needed to be made stationar
 - The models is developed using Keras
 - After comparing the several models that were developed, the model with best results (Dropout Regularized LSTM) was chosen
 
+<div align="center">
+ 
 ![image](https://user-images.githubusercontent.com/48406637/185092722-f9435ea1-be30-4a58-b8c3-c8d6cf897527.png)
 
+ </div>
 
 - Architecture of chosen model
 
 
+<div align="center">
+ 
 ![unnamed (7)](https://user-images.githubusercontent.com/48406637/185092551-855b085e-c240-4ffe-a339-94ce9bd52bf6.png)
 
+ </div>
+ 
 --- 
 ### Clustering
 - The forecasts from the model are given to the clustering algorithm which figures out the optimal cluster formation for a given test vehicle and constraints.
