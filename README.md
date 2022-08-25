@@ -27,7 +27,13 @@ In summary, this project revolves around:
 
 
 ## Data Pipeline
-![unnamed](https://user-images.githubusercontent.com/48406637/185078356-cd2689e3-82af-4fcb-92e2-bece10b747a5.png)
+
+<div align="center">
+
+ ![unnamed](https://user-images.githubusercontent.com/48406637/185078356-cd2689e3-82af-4fcb-92e2-bece10b747a5.png)
+
+</div>
+
 
 ### Data
 - Dataset is generated using the [SUMO](https://www.eclipse.org/sumo/) traffic simulator.
