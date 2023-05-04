@@ -6,7 +6,6 @@
 - `training/` code (noteboks and helper scripts) for training the model
 - `clustering` code for second phase i.e. optimal cluster formation
 ---
-- Presentation slides can be found [here](https://docs.google.com/presentation/d/1_vtB7uUEUL9otgZAAquNeakVFEcEkK-RATCQOFo6aog/edit?usp=sharing)
 
 ## Block Diagram 
 ![unnamed (0)](https://user-images.githubusercontent.com/48406637/185078662-91299f99-64fb-4d9a-a4de-9c7666c83de2.png)
